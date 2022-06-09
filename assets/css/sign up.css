@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: white;
+}
+
+
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 999;
+    text-align: center;
+    padding: 60px 32px;
+    width: 370px;
+    transform: translate(-50%,-50%);
+    background: rgba(48, 224, 255, 0.185);
+    /* box-shadow: -1px 4px 28px 0px rgba(0,0,0,0.75); */
+}
+
+.content header{
+    color: rgb(0, 238, 255);
+    font-size: 33px;
+    font-weight: bold;
+    margin: 0 0 35px 0;
+    font-family: 'Montserrat',sans-serif;
+    text-align: left;
+}
+
+
+.field{
+    position: relative;
+    height: 45px;
+    width: 100%;
+    display: flex;
+    background: rgba(16, 196, 241, 0.164);
+}
+
+.field span{
+    color: #2691d9ad;
+    width: 40px;
+    line-height: 45px;
+}
+
+.field input{
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #2691d9ad;
+    font-size: 16px;
+}
+
+.raider{
+    margin-top: 16px;
+}
+
+.space{
+    margin-top: 16px;
+}
+
+.space span i.hide-btn::before{
+    content: "\f070";
+}
+
+.show{
+    position: absolute;
+    right: 13px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.failed button{
+    margin: 16px 0px 10px 0px;
+    height: 45px;
+    width: 363px;
+    font-size: 20px;
+    color: #2691d9ad;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    background: rgba(16, 196, 241, 0.164);
+    /* border-radius: 3px; */
+    border: 0px solid rgba(16, 196, 241, 0.164);
+}
+
+.failed button:hover{
+    background: #48e1ec;
+}
+
+
+.login{
+    color: #2691d9ad;
+    margin: 20px 0;
+    font-family: 'Poppins',sans-serif;
+}
+
+
+.links{
+    display: flex;
+    cursor: pointer;
+    color: #2691d9ad;
+    margin: 0 0 20px 0;
+}
+
+.facebook,.google{
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    margin-left: 10px;
+}
+
+.facebook{
+    margin-left: 5px;
+    background: rgba(16, 196, 241, 0.164);
+    /* border: 1px solid #3e61a8; */
+}
+
+.facebook a{
+    color: #2691d9ad;
+}
+
+.google{
+    margin-right: 10px;
+    background: rgba(16, 196, 241, 0.164);
+}
+
+.google a{
+    color: #2691d9ad;
+}
+.facebook:hover{
+    background: #48e1ec;
+}
+
+.google:hover{
+    background: #48e1ec;
+}
+
+.links i{
+    font-size: 17px;
+}
+
+i span{
+    margin-left: 8px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 16px;
+    font-family: 'Poppins',sans-serif;
+}
+
+.signin{
+    font-size: 15px;
+    color: #2691d9ad;
+    font-family: 'Poppins',sans-serif;
+}
+
+.signin a{
+    color: #3498db;
+    text-decoration: none;
+}
+
+.signin a:hover{
+    text-decoration: underline;
+}
+
+
+

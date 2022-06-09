@@ -1,0 +1,271 @@
+*{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+.countener{
+    width: 1100px;
+    margin: auto;
+    position: relative;
+}
+
+
+.logo a{
+    font-size: 50px;
+    font-weight: 100;
+    float: left;
+    color: black;
+    /* width: 60%;
+    margin: 20px;
+    padding: 0px 0px 0px 70px; */
+}
+
+.smart{
+    color: white;
+    font-family: 'Pacifico', cursive;
+}
+
+.kesmas{
+    color: black;
+    font-family: 'Baloo Da 2', cursive;
+}
+
+
+.tombol-menu{
+    position: absolute;
+    top: 1.7rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+}
+
+.tombol-menu .garis{
+    height: 3px;
+    background-color: white;
+}
+
+
+.menu{
+    float: right;
+}
+
+nav{
+    background: rgb(94, 174, 248);
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 80px;
+    top: 0;
+    z-index: 1;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li{
+    /* margin-top: 10px;
+    margin-bottom: 10px; */
+    float: left;
+}
+
+nav ul li a{
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    color: black;
+    text-decoration: none;
+    /* font-size: 1.2em; */
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+section{
+    margin: auto;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.konten{
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+
+h2{
+    font-family: 'comic sans ms';
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: black;
+    line-height: 60px;
+    width: 100%;
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    margin: 10px 0px 10px 0px;
+    padding: 10px 0px 10px 0px;
+    text-align: justify;
+}
+
+.tombol-biru{
+    background: #29b7f8;
+    border-radius: 20px;
+    margin-top: 25px;
+    padding: 10px 20px 10px 20px;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.tombol-biru:hover{
+    background: #0362f0;
+    text-decoration: none;
+}
+
+/* footer */
+
+#about{
+    width: 100%;
+    background: #dedede;
+    padding: 50px 0px 50px 0px;
+}
+
+.footer{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.footer-section1{
+    width: 30%;
+    margin: 0 auto;
+}
+
+
+.footer-section{
+    width: 20%;
+    margin: 0 auto;
+}
+
+h3{
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: black;
+    width: 100%;
+}
+
+.paragraf{
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+}
+
+.paragraf1{
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+}
+
+/* copyright */
+
+#copyright{
+    text-align: center;
+    width: 100%;
+    padding: 50px 0px 50px 0px;
+    margin-top: 50px;
+}
+
+
+/* responsif */
+
+@media screen and (max-width: 991.98px) {
+
+    /* navigasi */
+    .countener{
+        width: 90%;
+    }
+
+    .logo a{
+        display: inline;
+        width: 100%;
+        margin-left: 23%;
+    }
+
+    .tombol-menu{
+        display: flex;
+    }
+
+    nav .menu{
+        display: none;
+        width: 100%;
+        margin: 0;
+    }
+
+    nav .menu ul{
+        text-align: center;
+        margin: auto;
+        line-height: 60px;
+    }
+
+    nav .menu ul li{
+        width: 100%;
+        display: inline-block;
+        float: none;
+    }
+
+    nav .menu.active{
+        display: flex;
+    }
+
+
+    section{
+        display: block;
+    }
+
+    section img{
+        display: block;
+        width: 100%;
+        height: auto;
+    }    
+
+    .paragraf{
+        width: 100%;
+        font-family: 'Montserrat', sans-serif;
+        text-align: justify;
+        margin: 10px 0px 10px -50px;
+    }
+    .paragraf1{
+        /* width: 90%; */
+        font-family: 'Montserrat', sans-serif;
+        /* text-align: justify; */
+        margin: 16px 0px 0px -50px;
+    }
+
+    h3{
+        /* font-family: 'comic sans ms'; */
+        font-size: 25px;
+        /* margin-bottom: 20px; */
+        margin: 0px 0px 0px -50px;
+        color: black;
+        width: 100%;
+    }
+
+}
