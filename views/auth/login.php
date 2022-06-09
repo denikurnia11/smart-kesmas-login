@@ -26,6 +26,18 @@ if (isset($_SESSION['isLoggedIn'])) {
         <!-- form login -->
         <div class="content">
             <header>Login</header>
+            <?php
+            if (isset($_SESSION['salah'])) {
+                echo '<div class="message">
+                        <p>Email atau Password Salah!</p>
+                    </div>';
+            }
+            if (isset($_SESSION['regis'])) {
+                echo '<div class="message-regis">
+                        <p>Registrasi Berhasil!</p>
+                    </div>';
+            }
+            ?>
             <form action="../../controllers/CekLogin.php" method="post" name="form">
                 <div class="field">
                     <span class="fa fa-user"></span>
@@ -77,6 +89,12 @@ if (isset($_SESSION['isLoggedIn'])) {
         </div>
     </div>
 
+
+    <?php
+    // Hapus session
+    unset($_SESSION['salah']);
+    unset($_SESSION['regis']);
+    ?>
 </body>
 
 </html>

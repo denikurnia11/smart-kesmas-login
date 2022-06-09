@@ -10,7 +10,14 @@ $result = mysqli_query($koneksi, $sql);
 
 if (mysqli_num_rows($result) > 0) {
     $_SESSION['isLoggedIn'] = true;
-    header('Location: ../views/home.php');
+    if ($result->fetch_array()['role'] == 'admin') {
+        $_SESSION['role'] = 'admin';
+        header('Location: ../views/v_admin/admin.php');
+    } else {
+        $_SESSION['role'] = 'user';
+        header('Location: ../views/home.php');
+    }
 } else {
-    echo "<h2>Username atau Password Salah!</h2>";
+    $_SESSION['salah'] = true;
+    header('Location: ../views/home.php');
 }
