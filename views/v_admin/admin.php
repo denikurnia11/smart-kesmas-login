@@ -83,8 +83,8 @@ if ($_SESSION['role'] == 'user') {
                             <div class="d-flex p-3 border-bottom mb-2">
                                 <img src="./images/user/user.png" alt="user" class="img-user me-2">
                                 <div class="d-block">
-                                    <p class="fw-bold m-0 lh-1">YourName</p>
-                                    <small>YourAccount@gmail.com</small>
+                                    <p class="fw-bold m-0 lh-1"><?php echo $_SESSION['name']; ?></p>
+                                    <small><?php echo $_SESSION['email']; ?></small>
                                 </div>
                             </div>
                             <a class="dropdown-item" href="#">
@@ -107,8 +107,8 @@ if ($_SESSION['role'] == 'user') {
             <div class="slider-head">
                 <div class="d-block pt-4 pb-3 px-3">
                     <img src="./images/user/user.png" alt="user" class="slider-img-user mb-2">
-                    <p class="fw-bold mb-0 lh-1 text-white">YourName</p>
-                    <small class="text-white">YourAccount@gmail.com</small>
+                    <p class="fw-bold mb-0 lh-1 text-white"><?= $_SESSION['name']; ?></p>
+                    <small class="text-white"><?= $_SESSION['email']; ?></small>
                 </div>
             </div>
             <div class="slider-body px-1">
@@ -202,7 +202,7 @@ if ($_SESSION['role'] == 'user') {
                             <div class="d-flex align-items-center px-2">
                                 <i class="fa fa-users float-start fa-3x py-auto" aria-hidden="true"></i>
                                 <div class="card-body text-end">
-                                    <h5 class="card-title">122</h5>
+                                    <h5 class="card-title"><?= $_SESSION['jmlPengguna']; ?></h5>
                                     <p class="card-text">pengguna</p>
                                 </div>
                             </div>

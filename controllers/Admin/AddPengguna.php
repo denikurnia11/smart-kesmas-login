@@ -11,6 +11,7 @@ $sql = "INSERT INTO user VALUES ('','$name','$email','$password','$role')";
 
 if (mysqli_query($koneksi, $sql)) {
     // $_SESSION['addPengguna'] = true;
+    $_SESSION['jmlPengguna'] = mysqli_num_rows(mysqli_query($koneksi, "SELECT * FROM user"));
     header('Location: ../../views/v_admin/pengguna.php');
 } else {
     echo "Pendaftaran Gagal : " . mysqli_error($koneksi);

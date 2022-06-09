@@ -83,8 +83,8 @@ include "../../koneksi.php";
                             <div class="d-flex p-3 border-bottom mb-2">
                                 <img src="./images/user/user.png" alt="user" class="img-user me-2">
                                 <div class="d-block">
-                                    <p class="fw-bold m-0 lh-1">YourName</p>
-                                    <small>YourAccount@gmail.com</small>
+                                    <p class="fw-bold m-0 lh-1"><?php echo $_SESSION['name']; ?></p>
+                                    <small><?php echo $_SESSION['email']; ?></small>
                                 </div>
                             </div>
                             <a class="dropdown-item" href="#">
@@ -107,13 +107,13 @@ include "../../koneksi.php";
             <div class="slider-head">
                 <div class="d-block pt-4 pb-3 px-3">
                     <img src="./images/user/user.png" alt="user" class="slider-img-user mb-2">
-                    <p class="fw-bold mb-0 lh-1 text-white">YourName</p>
-                    <small class="text-white">YourAccount@gmail.com</small>
+                    <p class="fw-bold mb-0 lh-1 text-white"><?= $_SESSION['name']; ?></p>
+                    <small class="text-white"><?= $_SESSION['email']; ?></small>
                 </div>
             </div>
             <div class="slider-body px-1">
                 <nav class="nav flex-column">
-                    <a class="nav-link px-3 active" href="#">
+                    <a class="nav-link px-3 active" href="admin.php">
                         <i class="fa fa-tachometer fa-lg box-icon" aria-hidden="true"></i>Dashboar
                     </a>
                     <a class="nav-link px-3" href="pengguna.php">
