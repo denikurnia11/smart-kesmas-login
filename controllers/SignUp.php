@@ -1,14 +1,14 @@
 <?php
 session_start();
 include '../koneksi.php';
+require_once '../models/UserModel.php';
+$UserModel = new UserModel();
 
 $name = $_POST['name'];
 $email = $_POST['email'];
 $password = sha1($_POST['password']);
 
-$sql = "INSERT INTO user VALUES ('','$name','$email','$password','user')";
-
-if (mysqli_query($koneksi, $sql)) {
+if ($UserModel->save($name, $email, $password, 'user')) {
     $_SESSION['regis'] = true;
     header('Location: ../views/home.php');
 } else {

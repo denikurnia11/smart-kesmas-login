@@ -1,0 +1,347 @@
+*{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+.countener{
+    width: 1100px;
+    margin: auto;
+    position: relative;
+    /* background: blue; */
+}
+
+
+.logo a{
+    font-size: 50px;
+    font-weight: 100;
+    float: left;
+    color: black;
+}
+
+.smart{
+    color: white;
+    font-family: 'Pacifico', cursive;
+}
+
+.kesmas{
+    color: black;
+    font-family: 'Baloo Da 2', cursive;
+}
+
+
+.tombol-menu{
+    position: absolute;
+    top: 1.7rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+}
+
+.tombol-menu .garis{
+    height: 3px;
+    background-color: white;
+}
+
+
+.menu{
+    float: right;
+}
+
+nav{
+    background: rgb(94, 174, 248);
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 80px;
+    top: 0;
+    z-index: 1;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li{
+    float: left;
+}
+
+nav ul li a{
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    color: black;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section{
+    margin: auto;
+    display: flex;
+    margin-bottom: 50px;
+}
+.konten{
+    text-align: center;
+    width: 100%;
+}
+
+.info{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.informasi1{
+    width: 20%;
+    margin-right: 170px;
+}
+
+.informasi{
+    width: 20%;
+    margin-right: 135px;
+}
+
+
+.informasi1 .gambar1{
+    width: 150%;
+}
+
+.informasi .gambar2{
+    width: 134%;
+}
+
+.informasi .gambar3{
+    width: 147%;
+}
+
+
+.informasi1 a{
+    color: black;
+    text-decoration: none;
+    float: left;
+    font-family: 'Comic sans ms';
+    font-size: 25px;
+}
+
+.informasi1 a:hover{
+    text-decoration: underline;
+}
+
+.informasi1 p{
+    text-align: justify;
+    color: black;
+    margin-top: 30px;
+    width: 140%;
+}
+
+.informasi a{
+    color: black;
+    text-decoration: none;
+    float: left;
+    text-align: left;
+    font-family: 'Comic sans ms';
+    font-size: 25px;
+    padding-top: 19px;
+}
+
+.informasi a:hover{
+    text-decoration: underline;
+}
+
+.informasi p{
+    text-align: justify;
+    color: black;
+    padding-top: 10px;
+}
+
+.khusus{
+    width: 140%;
+}
+
+h2{
+    float: left;
+    color: black;
+    font-family: 'comic sans ms';
+    font-size: 25px;
+    margin-top: -40px;
+}
+
+p{
+    float: left;
+    text-align: justify;
+    margin-top: 20px;
+    width: 90%;
+    margin-bottom: 150px;
+}
+
+.conten{
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    z-index: 999;
+    text-align: center;
+    padding: 0px 0px 0px 0px;
+    width: 370px;
+    transform: translate(40%, 60%);
+    background: rgba(48, 224, 255, 0.185);
+}
+
+.conten header{
+    color: rgb(0, 204, 255);
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0px 0px 20px;
+    font-family: 'Montserrat',sans-serif;
+    text-align: left;
+}
+
+.fiel{
+    position: relative;
+    height: 45px;
+    width: 87%;
+    margin: 20px 30px 20px 20px;
+    display: flex;
+    border-radius: 5px;
+    background: rgba(16, 196, 241, 0.164);
+}
+
+.fiel input{
+    height: 100%;
+    width: 100%;
+    margin: 0px 5px 0px 5px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: black;
+    font-size: 16px;
+}
+
+.fiel select{
+    margin: 0px 0px 0px 0px;
+    height: 45px;
+    width: 100%;
+    font-size: 16px;
+    color: black;
+    background: transparent;
+}
+
+.failed button{
+    margin: 0px 0px 20px 0px;
+    height: 45px;
+    width: 50%;
+    font-size: 15px;
+    font-weight: 600;
+    color: black;
+    outline: none;
+    background: rgba(16, 196, 241, 0.164);
+    border: none;
+    cursor: pointer;
+}
+
+.failed button:hover{
+    background: #48e1ec;
+}
+
+#copyright{
+    background: rgb(117, 108, 108);
+    text-align: center;
+    width: 100%;
+    padding: 40px 0px 30px 0px;
+}
+
+@media screen and (max-width: 991.98px) {
+    .countener{
+        width: 90%;
+    }
+
+    .logo a{
+        display: inline;
+        width: 100%;
+        margin-left: 23%;
+    }
+
+    .tombol-menu{
+        display: flex;
+    }
+
+    nav .menu{
+        display: none;
+        width: 100%;
+        margin: 0;
+    }
+
+    nav .menu ul{
+        text-align: center;
+        margin: auto;
+        line-height: 50px;
+    }
+
+    nav .menu ul li{
+        width: 100%;
+        display: inline-block;
+        float: none;
+    }
+
+    nav .menu.active{
+        display: flex;
+    }
+
+    section{
+        display: block;
+    }
+    
+    .informasi{
+        width: 100%;
+        padding-right: 13%;
+        margin-bottom: 5%;
+    }
+    
+    .informasi1{
+        width: 100%;
+        padding-right: 10%;
+        margin-bottom: 5%;
+    }
+
+    .paragraf{
+        width: 100%;
+        font-family: 'Montserrat', sans-serif;
+        text-align: justify;
+        margin: 10px 0px 10px 0px;
+    }
+
+    .conten{
+        position: absolute;
+        top: 101%;
+        text-align: center;
+        padding: 0px 0px 0px 0px;
+        width: 370px;
+        transform: translate(-43%, 0%);
+        background: rgba(48, 224, 255, 0.185);
+    }
+
+    #copyright{
+        background: rgb(117, 108, 108);
+        text-align: center;
+        margin-top: 70%;
+        width: 100%;
+        padding: 40px 0px 30px 0px;
+    }
+}

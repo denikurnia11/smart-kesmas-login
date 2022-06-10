@@ -47,7 +47,7 @@ if ($_SESSION['isLoggedIn'] == false) {
             <div class="menu">
                 <ul>
                     <li><a href="Home.html">Home</a></li>
-                    <li><a href="halaman 2/halaman2.html">Information</a></li>
+                    <li><a href="halaman2/halaman2.php">Information</a></li>
                     <li><a href="halaman 3/halaman3.html">Queuard</a></li>
                     <li><a href="../controllers/Logout.php" class="logout">Logout</a></li>
                 </ul>
@@ -66,7 +66,7 @@ if ($_SESSION['isLoggedIn'] == false) {
                 <p> Dapatkan berbagai informasi covid-19, penyebab, gejala, cara penjegahan serta informasi
                     persyaratan vaksinasi, anda juga dapat melakukan pendaftaran vaksinasi melalu website ini.
                 </p>
-                <p><a href="halaman 2/halaman2.html" class="tombol-biru"> Read More </a></p>
+                <p><a href="halaman2/halaman2.php" class="tombol-biru"> Read More </a></p>
             </div>
         </section>
 
@@ -77,7 +77,7 @@ if ($_SESSION['isLoggedIn'] == false) {
                 <p> Pendaftaran nomor antrian pasien melalui website ini dengan
                     mudah
                 </p>
-                <p><a href="halaman 3/halaman3.html" class="tombol-biru"> Click here </a></p>
+                <p><a href="#" class="tombol-biru"> Click here </a></p>
             </div>
             <img src="../assets/img/gambar 2.png" alt="image">
         </section>
